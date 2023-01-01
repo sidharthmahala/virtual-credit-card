@@ -1,0 +1,129 @@
+.container {
+    margin: 0;
+    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+  height: 225px;
+  border: 1px solid #ccc;
+  background: #1d976c; /* fallback for old browsers */
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    font-size: 18px;
+    margin-left:15px;
+}
+.name-number{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.card-number{
+    margin: 20px 0 15px 0;
+    padding: 10px 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+img{
+    width: 60px;
+    height: 60px;  
+}
+
+.expire-cvv{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+    font-weight:600;
+    margin-top: 4px;
+}
+.exp-details {
+    margin: 0 30px 0 0;
+    
+}
+
+.exp-date, .cvv{
+    cursor: pointer;
+    min-width: 80px;
+}
+.cvv-details{
+    margin: 0 30px 0 30px;
+
+}
+
+.branding{
+    display: flex;
+    flex-direction: column;
+    margin-left:auto ;
+}
+
+
+
+
+
+
+.button-lock {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  margin: 15px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+.locked-opacity{
+    opacity: 0.5
+}
+
+.locked-opacity-heading{
+    opacity: 0;
+}
