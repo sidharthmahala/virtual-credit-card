@@ -45,7 +45,6 @@ function VirtualCard() {
     formattedCard = formattedCard.match(/.{1,4}/g).join(" ");
 
 
-
     //EVENT HANDLING
 
     // event handler for the Lock/Unlock button
@@ -66,9 +65,9 @@ function VirtualCard() {
 
     const handleExpDateClick = () => {
 
-        copyToClipboard(mmYY);
+        copyToClipboard(expDate);
         setExpDate("Copied");
-        setTimeout(() => setExpDate(mmYY), 1500);
+        setTimeout(() => setExpDate(expDate), 1500);
     }
 
     //cvv
@@ -95,7 +94,7 @@ function VirtualCard() {
                         <div className="exp-details">
                             <p>Expire</p>
                             <div className="exp-date" onClick={handleExpDateClick} style={{ opacity: isLocked ? "0" : "1" }}>
-                                {expDate}
+                                {expDate.replace(/\d(?=\d{2})/g, "x")}
                             </div>
                         </div>
                         <div className="cvv-details">
