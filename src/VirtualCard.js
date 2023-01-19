@@ -94,7 +94,7 @@ function VirtualCard() {
                         <div className="exp-details">
                             <p>Expire</p>
                             <div className="exp-date" onClick={handleExpDateClick} style={{ opacity: isLocked ? "0" : "1" }}>
-                                {expDate.replace(/\d(?=\d{2})/g, "x")}
+                                {expDate}
                             </div>
                         </div>
                         <div className="cvv-details">
